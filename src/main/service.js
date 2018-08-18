@@ -56,7 +56,7 @@ module.exports = class Service {
     const json = {};
     json['schedule'] = schedule;
     json['consumedEnergy'] = consumedEnergy;
-    // fs.writeFile('src/data/output.json', json, 'utf8', err => {
+    // fs.writeFile('src/main/data/output.json', JSON.stringify(json), 'utf8', err => {
     //   if (err) throw err;
     // });
     return json;
